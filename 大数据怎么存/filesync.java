@@ -320,5 +320,5 @@ new GetObjectRequest(bucketName, keyName);
                 }
             }
         }
-	}
+    }
 }
