@@ -26,7 +26,6 @@ object DataSource_mysql {
 class MySql_source extends RichSourceFunction[(Int, String, String, String)] {
 
   override def run(ctx: SourceContext[(Int, String, String, String)]): Unit = {
-
     // 1. 加载MySql驱动
     Class.forName("com.mysql.jdbc.Driver")
     // 2. 链接MySql
