@@ -21,3 +21,4 @@ object Main {
     env.execute("Window Stream WordCount")
   }
 }
+
