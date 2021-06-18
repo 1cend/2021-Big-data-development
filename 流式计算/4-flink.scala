@@ -54,3 +54,4 @@ class MySql_Sink extends RichSinkFunction[(Int, String, String, String)] {
     }
   }
 }
+
