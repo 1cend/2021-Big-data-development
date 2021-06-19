@@ -4,9 +4,9 @@ object DataSink_MySql {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     //2.准备数据
     val value: DataStream[(Int, String, String, String)] = env.fromCollection(List(
-      (10, "dazhuang", "123456", "大壮"),
-      (11, "erya", "123456", "二丫"),
-      (12, "sanpang", "123456", "三胖")
+      (10, "zhangsan", "123456", "张三"),
+      (11, "lisi", "123456", "李四"),
+      (12, "wangwu", "123456", "王五")
     ))
     // 3. 添加sink
     value.addSink(new MySql_Sink)
